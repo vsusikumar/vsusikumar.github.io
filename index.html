@@ -6,49 +6,116 @@
   <title>Suseendaran Vijayakumar | Senior Salesforce Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f5f7fa;
+      font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
       color: #333;
     }
+
     header {
-      background: #0b5cab;
+      background: linear-gradient(135deg, #0b5cab, #0a3e74);
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem 2rem;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #ffffff;
+      color: #0b5cab;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e2e6eb;
+    }
+
     section {
-      max-width: 960px;
+      max-width: 1000px;
       margin: 2rem auto;
       background: white;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-    h1, h2 {
+
+    h2 {
       color: #0b5cab;
+      margin-top: 0;
     }
-    a {
-      color: #0b5cab;
-      text-decoration: none;
-    }
+
     ul {
-      padding-left: 1.5rem;
+      padding-left: 1.2rem;
+      margin: 0.5rem 0;
     }
-    .btn {
-      display: inline-block;
-      background: #0b5cab;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      text-decoration: none;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      align-items: center;
+      justify-items: center;
       margin-top: 1rem;
     }
+
+    .cert-grid img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .projects h3 {
+      margin-bottom: 0.3rem;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
       color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -56,8 +123,8 @@
 
   <header>
     <h1>Suseendaran Vijayakumar</h1>
-    <p>Senior Salesforce Developer | Apex • LWC • Integrations • Toronto, ON</p>
-    <a href="YOUR_RESUME_LINK_HERE" class="btn" download>Download Resume</a>
+    <p>Senior Salesforce Developer | Apex • LWC • Integrations | Toronto, ON</p>
+    <a href="YOUR_RESUME_LINK_HERE" class="btn" download>📄 Download Resume</a>
   </header>
 
   <section>
@@ -79,7 +146,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="projects">
     <h2>Projects</h2>
 
     <h3>Salesforce CPQ & Billing Automation</h3>
@@ -110,17 +177,12 @@
 
   <section>
     <h2>Certifications</h2>
-    <ul>
-      <li>Salesforce Platform Developer I</li>
-      <li>Salesforce Platform App Builder</li>
-      <li>Salesforce Service Cloud Consultant</li>
-      <li>Salesforce Data Cloud Consultant</li>
-      <li>Salesforce CPQ Specialist</li>
-      <li>Salesforce Administrator</li>
-      <li>Salesforce AI Associate</li>
-      <li>Oracle Java SE 7 Programmer</li>
-      <li>Oracle SQL Fundamentals-1</li>
-    </ul>
+    <div class="cert-grid">
+      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified Platform Developer I" title="Platform Developer I">
+      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified Administrator" title="Administrator">
+      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified CPQ Specialist" title="CPQ Specialist">
+      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified Integration Architect" title="Integration Architect">
+    </div>
   </section>
 
   <section>
@@ -133,4 +195,13 @@
 
   <section>
     <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:vsusikumar@gmail.com">vsusikuma
+    <p><strong>Email:</strong> <a href="mailto:suseendaran@example.com">suseendaran@example.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/suseendaran-v" target="_blank">linkedin.com/in/suseendaran-v</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/suseendaranv" target="_blank">github.com/suseendaranv</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Suseendaran Vijayakumar — Built with 💙 and Salesforce Passion
+  </footer>
+</body>
+</html>
