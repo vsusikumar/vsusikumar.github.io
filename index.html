@@ -1,207 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suseendaran Vijayakumar | Senior Salesforce Developer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f0f4f8;
+      background-color: #f8f9fa;
       color: #333;
     }
 
-    header {
-      background: linear-gradient(135deg, #0b5cab, #0a3e74);
+    .hero {
+      background: linear-gradient(135deg, #0b5cab, #06386f);
       color: white;
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 3rem 1rem 2rem;
     }
 
-    header h1 {
-      margin: 0;
+    .hero h1 {
       font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #ffffff;
-      color: #0b5cab;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
       font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s;
     }
 
-    .btn:hover {
-      background: #e2e6eb;
+    .hero p {
+      font-size: 1.2rem;
     }
 
-    section {
-      max-width: 1000px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
+    .btn-custom {
+      background-color: white;
       color: #0b5cab;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-      margin: 0.5rem 0;
-    }
-
-    li {
-      margin-bottom: 0.4rem;
-    }
-
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 1rem;
-      align-items: center;
-      justify-items: center;
+      font-weight: 600;
+      border: none;
       margin-top: 1rem;
     }
 
-    .cert-grid img {
-      width: 100px;
-      height: auto;
-      border-radius: 8px;
+    .btn-custom:hover {
+      background-color: #f0f0f0;
     }
 
-    .projects h3 {
-      margin-bottom: 0.3rem;
+    .section {
+      padding: 3rem 1rem;
+    }
+
+    .badge-img {
+      max-width: 100px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     footer {
-      text-align: center;
+      background-color: #f0f0f0;
       padding: 1rem;
+      text-align: center;
       color: #777;
       font-size: 0.9rem;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      .btn {
-        font-size: 0.9rem;
-      }
-
-      section {
-        margin: 1rem;
-        padding: 1.5rem;
-      }
-    }
   </style>
 </head>
-<body>
 
-  <header>
+<body>
+  <header class="hero">
     <h1>Suseendaran Vijayakumar</h1>
     <p>Senior Salesforce Developer | Apex • LWC • Integrations | Toronto, ON</p>
-    <a href="YOUR_RESUME_LINK_HERE" class="btn" download>📄 Download Resume</a>
+    <a href="YOUR_RESUME_LINK_HERE" class="btn btn-custom">📄 Download Resume</a>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a highly motivated and results-driven Senior Salesforce Developer with strong expertise across Sales, Service, Experience, Data, and CPQ Clouds. I design tailored CRM solutions, streamline processes using Apex, LWC, and Flows, and integrate systems with APIs and MuleSoft. My focus is on delivering scalable, efficient, and user-centric platforms that drive business value.
-    </p>
-  </section>
+  <main class="container">
+    <section class="section">
+      <h2>About Me</h2>
+      <p>I am a results-driven Senior Salesforce Developer with extensive experience in designing scalable CRM solutions using Apex, LWC, and Flows. I bring business value by integrating systems via APIs and MuleSoft while delivering efficient platforms across multiple clouds including CPQ, Experience, and Data Cloud.</p>
+    </section>
 
-  <section>
-    <h2>Key Skills</h2>
-    <ul>
-      <li>Apex (Triggers, Batch Jobs), Lightning Web Components (LWC), Aura</li>
-      <li>Sales Cloud, Service Cloud, CPQ, Billing, Experience Cloud</li>
-      <li>REST/SOAP APIs, MuleSoft, External Objects, Salesforce Connect</li>
-      <li>OmniStudio, Einstein Bots, Data Cloud, Agentforce</li>
-      <li>CI/CD with Gearset & Salesforce CLI, Source-Driven Dev (SFDX)</li>
-      <li>Data Migration: Data Loader, Talend, MuleSoft</li>
-    </ul>
-  </section>
+    <section class="section">
+      <h2>Key Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>Apex (Triggers, Batch Jobs), LWC, Aura</li>
+            <li>Sales, Service, CPQ, Experience Cloud</li>
+            <li>REST/SOAP APIs, MuleSoft</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Einstein Bots, Data Cloud</li>
+            <li>CI/CD: Gearset, SFDX, Salesforce CLI</li>
+            <li>Data Migration: Data Loader, Talend</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="accordion" id="projectAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              CPQ & Billing Automation
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Automated CPQ and billing with Apex/Flows, integrated Avalara and Blackthorn for streamlined finance ops.
+            </div>
+          </div>
+        </div>
 
-    <h3>Salesforce CPQ & Billing Automation</h3>
-    <p>
-      Automated complex quoting and billing workflows with Apex and Flows, integrated tax engines (Avalara), and Blackthorn for payment, streamlining revenue operations.
-    </p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Experience Cloud Portals
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Created dynamic self-service portals using LWC and Experience Cloud, with real-time order summary and registration.
+            </div>
+          </div>
+        </div>
 
-    <h3>Experience Cloud Portals with LWC</h3>
-    <p>
-      Built self-service portals with dynamic application forms, registration workflows, and real-time order summary pages using LWC and Experience Cloud.
-    </p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Salesforce-SAP Integration
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Integrated SAP with Salesforce using MuleSoft, synchronizing sales and order data in real-time.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3>Salesforce-SAP Integration</h3>
-    <p>
-      Integrated Salesforce and SAP using OAuth-secured REST APIs and MuleSoft, synchronizing opportunity and order data to ensure process continuity.
-    </p>
+    <section class="section">
+      <h2>Certifications</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-3 text-center">
+          <img src="YOUR_BADGE_IMAGE_URL" alt="Platform Developer I" class="badge-img">
+          <p>Platform Developer I</p>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <img src="YOUR_BADGE_IMAGE_URL" alt="Administrator" class="badge-img">
+          <p>Administrator</p>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <img src="YOUR_BADGE_IMAGE_URL" alt="CPQ Specialist" class="badge-img">
+          <p>CPQ Specialist</p>
+        </div>
+        <div class="col-6 col-md-3 text-center">
+          <img src="YOUR_BADGE_IMAGE_URL" alt="Integration Architect" class="badge-img">
+          <p>Integration Architect</p>
+        </div>
+      </div>
+    </section>
 
-    <h3>Einstein Bot + SharePoint Knowledge Integration</h3>
-    <p>
-      Enhanced agent productivity by integrating SharePoint and Einstein Bots into Salesforce Data Cloud and Experience Cloud sites.
-    </p>
+    <section class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Master of Applied Business Analytics</strong>, Carleton University, Ottawa</li>
+        <li><strong>B.E. in Computer Science</strong>, Easwari Engineering College, Chennai</li>
+      </ul>
+    </section>
 
-    <h3>ML Recommender System (Academic Project)</h3>
-    <p>
-      Designed a BERT-based system using Python & Streamlit to recommend academic presentation improvements — hosted on AWS/GCP and integrated with LMS.
-    </p>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <div class="cert-grid">
-      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified Platform Developer I" title="Platform Developer I">
-      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified Administrator" title="Administrator">
-      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified CPQ Specialist" title="CPQ Specialist">
-      <img src="YOUR_BADGE_IMAGE_URL" alt="Salesforce Certified Integration Architect" title="Integration Architect">
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Master of Applied Business Analytics</strong>, Carleton University, Ottawa</li>
-      <li><strong>Bachelor of Computer Science Engineering</strong>, Easwari Engineering College, Chennai</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:suseendaran@example.com">suseendaran@example.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/suseendaran-v" target="_blank">linkedin.com/in/suseendaran-v</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/suseendaranv" target="_blank">github.com/suseendaranv</a></p>
-  </section>
+    <section class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:suseendaran@example.com">suseendaran@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/suseendaran-v" target="_blank">linkedin.com/in/suseendaran-v</a></p>
+      <p>GitHub: <a href="https://github.com/suseendaranv" target="_blank">github.com/suseendaranv</a></p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Suseendaran Vijayakumar — Built with 💙 and Salesforce Passion
+    &copy; 2025 Suseendaran Vijayakumar | Built with Bootstrap & Salesforce Passion
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
